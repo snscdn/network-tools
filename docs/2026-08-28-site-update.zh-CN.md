@@ -38,7 +38,7 @@ TLS 和 HTTP 状态。
 macOS 或 Linux：
 
 ```bash
-./bin/netcheck.sh snscdn.com
+bash bin/netcheck.sh snscdn.com
 ```
 
 Windows PowerShell：

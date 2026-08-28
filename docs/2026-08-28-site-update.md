@@ -39,7 +39,7 @@ will not make activation faster.
 macOS or Linux:
 
 ```bash
-./bin/netcheck.sh snscdn.com
+bash bin/netcheck.sh snscdn.com
 ```
 
 Windows PowerShell:
