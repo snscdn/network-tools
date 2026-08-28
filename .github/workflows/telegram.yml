@@ -1,0 +1,35 @@
+name: Publish to Telegram
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      title:
+        description: Message title
+        required: true
+        default: SNSCDN update
+      url:
+        description: Link to publish
+        required: true
+        default: https://github.com/snscdn/network-tools
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send channel message
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: "@snscdntz"
+          TITLE: ${{ github.event.release.name || inputs.title }}
+          URL: ${{ github.event.release.html_url || inputs.url }}
+        run: |
+          message=$(printf '🛠 SNSCDN 更新\n\n%s\n\n查看完整内容：\n%s' "$TITLE" "$URL")
+          curl --fail-with-body --silent --show-error \
+            --request POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${CHAT_ID}" \
+            --data-urlencode "text=${message}"
