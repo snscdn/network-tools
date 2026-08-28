@@ -15,8 +15,8 @@ The tools run locally and do not collect or upload results.
 macOS or Linux:
 
 ```bash
-./bin/netcheck.sh example.com
-./bin/netcheck.sh example.com 443
+bash bin/netcheck.sh example.com
+bash bin/netcheck.sh example.com 443
 ```
 
 Windows PowerShell:

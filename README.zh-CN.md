@@ -15,8 +15,8 @@
 macOS 或 Linux：
 
 ```bash
-./bin/netcheck.sh example.com
-./bin/netcheck.sh example.com 443
+bash bin/netcheck.sh example.com
+bash bin/netcheck.sh example.com 443
 ```
 
 Windows PowerShell：
