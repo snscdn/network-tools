@@ -1,5 +1,7 @@
 # SNSCDN 网络诊断工具
 
+[公开教程导航：按当前问题找到下一步（中文 / English）](docs/tutorial-navigation.md)
+
 [English](README.md)
 
 用于排查 DNS、TCP、TLS 和 HTTP 连接问题的小工具。依赖少、在本地运行，
