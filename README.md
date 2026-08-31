@@ -1,5 +1,7 @@
 # SNSCDN Network Tools
 
+[Public tutorials: find your next step (English / 简体中文)](docs/tutorial-navigation.md#english)
+
 [简体中文](README.zh-CN.md)
 
 Small, dependency-light network checks for DNS, TCP, TLS, and HTTP problems.
