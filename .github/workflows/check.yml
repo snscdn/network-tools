@@ -31,4 +31,7 @@ jobs:
           test "$result" -eq 2
       - if: runner.os == 'Windows'
         shell: pwsh
-        run: '[scriptblock]::Create((Get-Content -Raw .\bin\netcheck.ps1)) | Out-Null'
+        run: |
+          [scriptblock]::Create((Get-Content -Raw .\bin\netcheck.ps1)) | Out-Null
+          .\bin\netcheck.ps1 example.com 443
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
