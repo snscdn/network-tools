@@ -9,6 +9,7 @@ The tools run locally and do not collect or upload results.
 
 ## Latest update
 
+- [2026-09-19: Netcheck result decision card](docs/netcheck-result-decision-card.md#english)
 - [2026-09-18: Bidirectional traffic and node multiplier planning](docs/bidirectional-traffic-planning.md#english)
 - [2026-08-28: Multilingual help center and network troubleshooting guide](docs/2026-08-28-site-update.md)
 - [中文版：多语言帮助中心与网络排障指南](docs/2026-08-28-site-update.zh-CN.md)

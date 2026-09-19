@@ -9,6 +9,7 @@
 
 ## 最新更新
 
+- [2026-09-19：网络检查结果判断卡](docs/netcheck-result-decision-card.md#简体中文)
 - [2026-09-18：双向流量与节点倍率估算](docs/bidirectional-traffic-planning.md#简体中文)
 - [2026-08-28：多语言帮助中心与网络排障指南](docs/2026-08-28-site-update.zh-CN.md)
 - [English version](docs/2026-08-28-site-update.md)
